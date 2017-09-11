@@ -2,7 +2,7 @@
 
 > A Vue.js project
 
-父组件传子组件： ：data=  <br/>
+父组件传子组件： :data=data  <br/>
 子组件传父组件：this.$emit('event',data)<br/>
 子组件传父组件：this.$refs.name.[子组件数据]<br/>
 
