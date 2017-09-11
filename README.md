@@ -2,7 +2,16 @@
 
 > A Vue.js project
 
-## Build Setup
+父组件传子组件： ：data=  <br/>
+子组件传父组件：this.$emit('event',data)<br/>
+子组件传父组件：this.$refs.name.[子组件数据]<br/>
+
+api数据：import * as api from './api.js'<br/>
+  api.getSystemConfig().then(result=>{<br/>
+        console.log(result)<br/>
+      })<br/>
+
+## Build Setup<br/>
 
 ``` bash
 # install dependencies
