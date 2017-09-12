@@ -6,6 +6,10 @@
 子组件传父组件：this.$emit('event',data)<br/>
 子组件传父组件：this.$refs.name.[子组件数据]<br/>
 
+
+import axios from 'axios';<br/>
+const api='http://localhost:3000';<br/>
+export const getUser=()=>{return axios.get(api+'/index').then(res=>res.data)}<br/>
 api数据：import * as api from './api.js'<br/>
   api.getSystemConfig().then(result=>{<br/>
         console.log(result)<br/>
