@@ -13,7 +13,25 @@ export const getUser=()=>{return axios.get(api+'/index').then(res=>res.data)}<br
 api数据：import * as api from './api.js'<br/>
   api.getSystemConfig().then(result=>{<br/>
         console.log(result)<br/>
-      })<br/>
+      })<br/>
+<br/>
+//路由检测，登录功能<br/>
+// const whiteList = ['/', '/search', '/login'] // 不需要登陆的页面<br/>
+// router.beforeEach((to,from,next)=>{<br/>
+//   var token=localStorage.getItem('uid');<br/>
+//   if(!token){<br/>
+//     if(whiteList.indexOf(to.path)!==-1){//白名单<br/>
+//       next()<br/>
+//     }else{<br/>
+//       next('/login');<br/>
+//     }<br/>
+//   }else{<br/>
+//     if (to.path === '/login') { //跳转到首页<br/>
+//       next({path: '/'})<br/>
+//     }<br/>
+//     next();<br/>
+//   }<br/>
+// })<br/>
 
 ## Build Setup<br/>
 
