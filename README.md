@@ -15,23 +15,23 @@ api数据：import * as api from './api.js'<br/>
         console.log(result)<br/>
       })<br/>
 <br/>
-//路由检测，登录功能<br/>
-// const whiteList = ['/', '/search', '/login'] // 不需要登陆的页面<br/>
-// router.beforeEach((to,from,next)=>{<br/>
-//   var token=localStorage.getItem('uid');<br/>
-//   if(!token){<br/>
-//     if(whiteList.indexOf(to.path)!==-1){//白名单<br/>
-//       next()<br/>
-//     }else{<br/>
-//       next('/login');<br/>
-//     }<br/>
-//   }else{<br/>
-//     if (to.path === '/login') { //跳转到首页<br/>
-//       next({path: '/'})<br/>
-//     }<br/>
-//     next();<br/>
-//   }<br/>
-// })<br/>
+`//路由检测，登录功能
+// const whiteList = ['/', '/search', '/login'] // 不需要登陆的页面
+// router.beforeEach((to,from,next)=>{
+//   var token=localStorage.getItem('uid');
+//   if(!token){
+//     if(whiteList.indexOf(to.path)!==-1){//白名单
+//       next()
+//     }else{
+//       next('/login');
+//     }
+//   }else{
+//     if (to.path === '/login') { //跳转到首页
+//       next({path: '/'})
+//     }
+//     next();
+//   }
+// })`
 
 ## Build Setup<br/>
 
