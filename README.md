@@ -33,6 +33,19 @@ api数据：import * as api from './api.js'<br/>
 //   }
 // })`
 
+##node base64验证码
+router.get('/img',(ctx,next)=>{
+  var str=parseInt(Math.random()*9000+1000);
+  ctx.session.captcha=str;
+  var p = new captchapng(80, 30, str); //生成图片
+  p.color(0, 0, 0, 0);
+  p.color(80, 80, 80, 255);
+  var img = p.getBase64();
+  var imgbase64 = new Buffer(img, 'base64');
+  ctx.response.type="image/png";
+  ctx.body=imgbase64;
+});
+
 ## Build Setup<br/>
 
 ``` bash
