@@ -1,0 +1,12 @@
+//如果想要解析multipart/form-data类型,可以用koa-multer
+const Koa = require('koa');
+const route = require('koa-route');
+const multer = require('koa-multer');
+
+const app = new Koa();
+
+app.user(multer());
+
+app.user(function *(){
+　　this.body = this.req.body;
+})
