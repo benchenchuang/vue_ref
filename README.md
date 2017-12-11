@@ -48,6 +48,13 @@ router.get('/img',(ctx,next)=>{
 
 ## Build Setup<br/>
 
+
+##允许跨域访问
+
+var cors = require('koa-cors');
+//允许跨域访问
+app.use(cors());
+## 
 ``` bash
 # install dependencies
 npm install
