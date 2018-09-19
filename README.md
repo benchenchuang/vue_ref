@@ -58,3 +58,5 @@ app.use(cors());
 
 ## 实时自动化less转css<br/>
 gulpfile.js
+
+# 常用的js封装方法<br/>
